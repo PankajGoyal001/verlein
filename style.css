@@ -1,93 +1,102 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "League Spartan", sans-serif;
 }
-.container{
+
+.container {
     max-width: 1480px;
     width: 100%;
     padding: 0 20px;
     margin: 0% auto;
 }
 
-.head{
+.heading {
     background-color: #F3F3F3;
-}
-.heading{
     margin: 8px 0;
     font-size: 12px;
     font-weight: 500;
     line-height: 13.44px;
-    text-align: center;    
+    text-align: center;
 }
 
 /* header ---------------------------------------------------------------------------*/
-.verlein{
+.verlein {
     margin-top: 40px;
 }
-.verlein-contant{
+
+.verlein-contant {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.verlein-image{
+
+.verlein-image {
     max-width: 180px;
     width: 100%;
 }
-.menu{
+
+.menu {
     display: flex;
     gap: 30px;
 
 }
+
 .menu a {
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
     line-height: 15.68px;
     text-align: left;
-    color: #000000;        
+    color: #000000;
 }
-.menu-icon{
+
+.menu-icon {
     display: none;
 }
-.icons{
+
+.icons {
     display: flex;
     gap: 40px;
 }
 
 
-.verlein-main{
+.verlein-main {
     background-image: url(./image/Verlein\ -\ AlimaVerlein1\ .png);
     margin-top: 38px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.main-container{
+
+.main-container {
     display: flex;
     flex-direction: column;
     gap: 40px;
     padding: 272px 0 298px 130px;
 
 }
-.main-text{
+
+.main-text {
     font-size: 80px;
     font-weight: 500;
     line-height: 96px;
     text-align: left;
-    color: #FFFFFF;        
+    color: #FFFFFF;
     max-width: 430px;
     width: 100%;
 }
-.shop-button{
+
+.shop-button {
     font-size: 14px;
     font-weight: 700;
     line-height: 15.68px;
     text-align: left;
-    color: #FFFFFF;    
+    color: #FFFFFF;
     padding: 18px 30px 14px 30px;
     max-width: 151px;
     width: 100%;
@@ -96,70 +105,179 @@ body {
 }
 
 
-.verlein-follow{
+.verlein-follow {
     margin: 152px 0 110px 0;
 }
-.verlein-text{
-    margin-left: 287px;
-    max-width: 772px;
+
+.verlein-text {
+    margin: 0 auto;
+    max-width: 608px;
     width: 100%;
 }
-.text{
+
+.text {
     font-size: 28px;
     font-weight: 400;
     line-height: 36.4px;
     text-align: center;
-    color: #000000;    
+    color: #000000;
 }
 
 
-.product-contant{
+.product-contant {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
     max-width: 1180px;
     width: 100%;
-}
-.box1{
-  grid-area: 1 / 1 / 3 / 2;
-}
-.product{
+    margin: 0 auto;
     margin-bottom: 130px;
 }
 
+.photo {
+    background-image: url(./image/photo1.svg);
+    grid-area: 1 / 1 / 3 / 2;
+    max-width: 380px;
+    width: 100%;
+    height: 660px;
+
+}
+
+.box1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33.6px;
+    text-align: center;
+
+}
+
+.shop-fall-favorites {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: center;
+}
+
+.photo01 {
+    background-image: url(./image/photo2.svg);
+    text-align: center;
+    align-content: center;
+}
+
+.photo02 {
+    background-image: url(./image/photo3.svg);
+    text-align: center;
+    align-content: center;
+}
+
+.photo03 {
+    background-image: url(./image/photo4.svg);
+    text-align: center;
+    align-content: center;
+}
+
+.photo04 {
+    background-image: url(./image/photo5.svg);
+    text-align: center;
+    align-content: center;
+}
+
+.box2 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: center;
+    background-color: transparent;
+    align-content: center;
+}
+
+.photo01,
+.photo02,
+.photo03,
+.photo04 {
+    position: relative;
+    width: 300px;
+}
+
+.photo01,
+.photo02,
+.photo03,
+.photo04 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.box2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(29, 12, 12, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.photo01,
+:hover.box2 {
+    opacity: 1;
+}
 
 
 
 
 
-@media screen and ( max-width: 650px){
-    .menu a{
+@media screen and (max-width: 1200px) {
+    .product-contant {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .menu a {
         display: none;
     }
-    .contact-icon,.search-icon{
+
+    .contact-icon,
+    .search-icon {
         display: none;
     }
-    .main-container{
+
+    .main-container {
         padding: 200px 0;
         align-items: center;
     }
-    .menu-icon{
+
+    .menu-icon {
         display: block;
     }
 }
 
 
-@media screen and ( max-width: 425px){
-    .verlein-image{
+@media screen and (max-width: 425px) {
+    .verlein-image {
         max-width: 120px;
         width: 100%;
     }
-    .main-text{
+
+    .main-text {
         font-size: 60px;
         font-weight: 500;
         line-height: 72px;
         text-align: center;
-        color: #FFFFFF;        
+        color: #FFFFFF;
     }
 }

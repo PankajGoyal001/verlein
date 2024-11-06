@@ -64,13 +64,14 @@ body {
     gap: 40px;
 }
 
-
+/* main -------------------------------------------------------------------------------- */
 .verlein-main {
     background-image: url(./image/Verlein\ -\ AlimaVerlein1\ .png);
     margin-top: 38px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 850px;
 }
 
 .main-container {
@@ -104,11 +105,6 @@ body {
     background-color: transparent;
 }
 
-
-.verlein-follow {
-    margin: 152px 0 110px 0;
-}
-
 .verlein-text {
     margin: 0 auto;
     max-width: 608px;
@@ -124,6 +120,11 @@ body {
 }
 
 
+/* product ----------------------------------------------------------------------*/
+.product {
+    margin-top: 152px;
+}
+
 .product-contant {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -132,7 +133,7 @@ body {
     max-width: 1180px;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 130px;
+    padding-top: 110px;
 }
 
 .photo {
@@ -141,7 +142,25 @@ body {
     max-width: 380px;
     width: 100%;
     height: 660px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 80px;
+}
 
+.BESTSELLERS {
+    padding: 20px 30px 15px 30px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13.44px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    max-width: 189px;
+    width: 100%;
 }
 
 .box1 {
@@ -218,7 +237,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(29, 12, 12, 0.5);
+    background-color: #a7a6a780;
     color: #fff;
     display: flex;
     align-items: center;
@@ -232,6 +251,199 @@ body {
 :hover.box2 {
     opacity: 1;
 }
+
+
+
+/* bags ---------------------------------------------------------------------------------------*/
+.contant {
+    margin-top: 130px;
+    align-items: center;
+}
+
+.bags-photo {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.bags1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: center;
+    color: #FFFFFF;
+    background-image: url(./image/bag-image.svg);
+    max-width: 380px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.view-button {
+    text-align: center;
+}
+
+.view-all {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13.44px;
+    text-align: center;
+    padding: 20px 30px 15px 30px;
+    border: 1px solid #000000;
+    color: #000000;
+
+}
+
+/* hero-image ----------------------------------------------------------------------*/
+.hero {
+    margin-top: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero img {
+    width: 100%;
+}
+
+/* main-text ---------------------------------------------------------------------*/
+.verlein-text1 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.text1 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 39.2px;
+    text-align: center;
+    color: #000000;
+    max-width: 780px;
+    width: 100%;
+}
+
+.susan-text {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.4px;
+    text-align: center;
+    color: #000000;
+}
+
+/* cards ---------------------------------------------------------------------------*/
+.cards-heading {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.8px;
+    text-align: center;
+    color: #000000;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+/*  */
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+}
+
+.instagram-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33.6px;
+    color: #000000;
+    text-align: center;
+}
+
+.id {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16.9px;
+    text-align: center;
+    color: #000000;
+}
+
+.bags-images{
+    padding-top: 37px ;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.purse{
+    background-image: url(./image/purse1.svg);
+    max-width: 280px;
+    width: 100%;
+    height: 280px;
+    align-content: center;
+    text-align: center;
+}
+.purse1{
+    background-image: url(./image/purse2.svg);
+    max-width: 280px;
+    width: 100%;
+    height: 280px;
+    align-content: center;
+    text-align: center;
+}
+.purse2{
+    background-image: url(./image/purse3.svg);
+    max-width: 280px;
+    width: 100%;
+    height: 280px;
+    align-content: center;
+    text-align: center;
+}
+.purse3{
+    background-image: url(./image/purse4.svg);
+    max-width: 280px;
+    width: 100%;
+    height: 280px;
+    align-content: center;
+    text-align: center;
+}
+
+
+.retangle-line{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

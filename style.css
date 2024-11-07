@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "League Spartan", sans-serif;
+    font-family: 'Spartan';
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 
 .heading {
     background-color: #F3F3F3;
-    margin: 8px 0;
+    padding: 8px 0;
     font-size: 12px;
     font-weight: 500;
     line-height: 13.44px;
@@ -26,7 +26,7 @@ body {
 
 /* header ---------------------------------------------------------------------------*/
 .verlein {
-    margin-top: 40px;
+    padding: 50px 0 38px 0;
 }
 
 .verlein-contant {
@@ -67,7 +67,6 @@ body {
 /* main -------------------------------------------------------------------------------- */
 .verlein-main {
     background-image: url(./image/Verlein\ -\ AlimaVerlein1\ .png);
-    margin-top: 38px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -107,7 +106,7 @@ body {
 
 .verlein-text {
     margin: 0 auto;
-    max-width: 608px;
+    max-width: 772px;
     width: 100%;
 }
 
@@ -220,15 +219,10 @@ body {
 .photo04 {
     position: relative;
     width: 300px;
-}
-
-.photo01,
-.photo02,
-.photo03,
-.photo04 {
-    width: 100%;
     height: auto;
     display: block;
+    width: 100%;
+
 }
 
 .box2 {
@@ -238,10 +232,6 @@ body {
     right: 0;
     bottom: 0;
     background-color: #a7a6a780;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 1.5em;
     opacity: 0;
     transition: opacity 0.2s ease;
@@ -320,7 +310,7 @@ body {
 }
 
 .text1 {
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 39.2px;
     text-align: center;
@@ -385,55 +375,150 @@ body {
     color: #000000;
 }
 
-.bags-images{
-    padding-top: 37px ;
+.bags-images {
+    padding-top: 37px;
     display: flex;
     gap: 20px;
     justify-content: center;
 }
-.purse{
+
+.purse {
     background-image: url(./image/purse1.svg);
     max-width: 280px;
     width: 100%;
-    height: 280px;
     align-content: center;
     text-align: center;
+    justify-items: center;
 }
-.purse1{
+
+.purse1 {
     background-image: url(./image/purse2.svg);
     max-width: 280px;
     width: 100%;
     height: 280px;
     align-content: center;
     text-align: center;
+    justify-items: center;
+
 }
-.purse2{
+
+.purse2 {
     background-image: url(./image/purse3.svg);
     max-width: 280px;
     width: 100%;
     height: 280px;
     align-content: center;
     text-align: center;
+    justify-items: center;
+
 }
-.purse3{
+
+.purse3 {
     background-image: url(./image/purse4.svg);
     max-width: 280px;
     width: 100%;
     height: 280px;
     align-content: center;
     text-align: center;
+    justify-items: center;
+
 }
 
-
-.retangle-line{
+.icons-heart {
+    display: flex;
+    gap: 5px;
+    align-items: center;
     text-align: center;
 }
 
+.heart-icon {
+    padding: 4px 3px;
+}
+
+.like-text {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15.6px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hearts {
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    transition: all 0.3s ;
+}
+
+.main1:hover .hearts {
+    opacity: 1;
+}
+
+.main1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ;
+}
+
+.main1:hover {
+    background-color: #0000004D;
+}
 
 
-
-
-
+/* footer --------------------------------------------------------------------------------------------------*/
+.retangle-line {
+    text-align: center;
+}
+.footer{
+    padding: 70px 0 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.social-media{
+    display: flex;
+    gap: 10px;
+}
+.social-media-icon{
+    padding: 12px;
+    border: 1px solid #D8D8D8;
+    border-radius: 50%;
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-text{
+    font-family: Spartan;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+    color: #000000;    
+}
+.head-text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: left;
+    color: #000000;    
+}
+.footer-text1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.email{
+    border: none;
+}
 
 
 
@@ -451,8 +536,7 @@ body {
 
 @media screen and (max-width: 1200px) {
     .product-contant {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        
     }
 }
 
